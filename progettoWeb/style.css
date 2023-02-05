@@ -1,0 +1,517 @@
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/*default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+html,
+body {
+    background: rgb(199,199,199);
+    background: linear-gradient(90deg, rgba(199,199,199,1) 6%, rgba(241,241,241,1) 48%, rgba(198,198,198,1) 89%);
+    background-size: 1500px;
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#zoomPage{
+    zoom: 90%;
+}
+
+.cover-container {
+    max-width: 100em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+}
+
+.container{
+    position: relative;
+    top: 500px;
+}
+
+h1{
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "Georgia","Times New Roman",serif;
+}
+
+/*MESSAGGIO DI ALERT SUCCESS O FAILURE*/
+#mess{
+    position: fixed;
+    margin-top: 50px;
+    z-index: 1000;
+}
+
+
+/*IMMAGINE DI SFONDO DELLA PAGINA DI LOGIN,SIGN UP E LISTA PRENOTAZIONI*/
+.logsign{
+    background-image: url("img/fotoSfondoLogSign.jpg");
+}
+
+/*HEADER*/
+
+/*Cover main*/
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+/*TOPBAR*/
+#barra{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 70px;
+    right: 0;
+    background-color: #212121;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+#testo{
+  margin-left: 420px;
+}
+
+#bottonePrenotazione{
+    margin-right: -8px;
+}
+
+
+/*STILE LOGIN E SIGN UP*/
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#loginElement{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+
+/*CAROUSEL*/
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-inner{
+    margin-top: 20px;
+}
+
+
+/*INDEX*/
+.intro{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.featurette-heading {
+    margin-bottom: 30px;
+    letter-spacing: -.05rem;
+}
+
+.dimensioniSlide{
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    min-height: 100%;
+}
+
+@media (min-width: 40em) {
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.last{
+    margin-bottom: 100px; /*SPAZIO FINALE*/
+}
+
+#carouselAutoplaying{ /*definisce la grandezza del form delle recensioni*/
+    height: 250px;
+    min-width: 100%;
+}
+
+.star-rating i {
+    font-size: 14px;
+    color: #ffdc12;
+}
+
+.freccia{ /*definisce la forma della freccia finale del blocco recensioni, punta sul nome dell'utente*/
+    width: 0;
+    top: 0;
+    border-left: 1vh solid transparent;
+    border-right: 1vh solid transparent;
+    border-top: 2vh solid dimgrey;
+    position: relative;
+    margin-bottom: 10px;
+    left: 50%;
+}
+
+#recensione{
+    background-color: dimgrey;
+    color: whitesmoke;
+    border-radius: 20px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+.overview{
+    margin-left: 13px;
+}
+
+.servizio{ /*CARD SERVIZI CHE SI MUOVONO*/
+    margin-left: 28px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 18rem;
+}
+
+.servizio:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 6px 6px 2px whitesmoke;
+}
+
+#titoloServizi{
+    margin-top: 100px;
+}
+
+#servizi{
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.miniMenu{
+    min-width: 100%;
+    height: 400px;
+}
+
+.infoMiniMenu{
+    position: absolute;
+    right: 3%;
+}
+
+.fotoHome{ /* caratteristiche foto sottostanti alla descrizione iniziale pagina home*/
+    max-width: 100%;
+    max-height: 100%;
+    margin: 60px 10px 0px;
+}
+
+.contornoFotoHome{
+    width: 650px;
+    height: 500px;
+}
+
+.scrittaFoto2{
+    margin-left: 0;
+}
+
+.fotoHome2{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 60px 0 0 5px;
+}
+
+.fotoMiniMenu{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.contornoFotoMiniMenu{
+    width: 600px;
+    max-height: 400px;
+}
+
+
+#hrMenu{
+    margin-top: 1px;
+    margin-bottom: 7px;
+}
+
+.distanzaTitoliMenu{
+    margin-bottom: 1px;
+}
+
+.sottotitoloMenu{
+    margin-bottom: 14px;
+}
+
+
+/*GALLERY*/
+.galleria{
+    top: 130px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    min-width: 1000px;
+}
+
+.distanzaCardGallery{
+    margin-bottom: 30px;
+}
+
+.contenitoreFotoGallery{
+    width: 800px;
+    height: 300px;
+    background-color: #333333;
+    margin-left: 20px;
+    padding: 0;
+    -webkit-box-shadow: -7px 9px 7px -6px black;
+    -moz-box-shadow: -7px 9px 7px -6px black;
+    box-shadow: -7px 9px 7px -6px black;
+}
+
+.fotoGallery{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.divisoreGallery{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    right: -10px;
+}
+
+
+/*RESTAURANT*/
+.menuIntero{
+    margin-top: 6%;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.scrollspy-example {
+    position: relative;
+    height: 400px;
+    overflow: auto;
+}
+
+.contornoFotoRestaurant{
+    top: -15px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.fotoRestaurant{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.iconaMenu{
+    float: left;
+    bottom: -22px;
+    position: relative;
+    color: #212121;
+}
+
+.titoloMenu{
+    margin-left: 40px;
+}
+
+.cardRestaurant{
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+}
+
+.cardMenu{
+    height: 400px;
+}
+
+.sposta{
+    height: 295px;
+}
+
+.sposta2{
+    position: relative;
+    top: 350px;
+}
+
+.container-menu{
+    width: 600px;
+}
+
+.cardInfoRist{
+    background-color: #333333;
+    position: relative;
+    width: 500px;
+    height: 490px;
+    margin-left: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.logoPrenotaRist{
+    margin-bottom: -70px;
+}
+
+.contact:hover{
+    color: red;
+}
+
+
+/*ROOMS*/
+.roomsIntero{
+    top: 130px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    min-width: 1000px;
+}
+
+#booking-modal-content {
+     border-radius: 15px;
+     background-color: #333333;
+     color: whitesmoke;
+     margin: 10% auto; /* 15% from the top and centered */
+     padding: 20px;
+     border: 1px solid #888;
+     width: 600px; /* Could be more or less, depending on screen size */
+     height: auto;
+}
+
+.bottoneBookingPrenota{
+    margin-top: -10px;
+}
+
+
+/*Footer*/
+.mastfoot {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+/*FOOTBAR*/
+.footbar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    min-width: 100%;
+    height: 300px;
+    background-color: #212121;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+#footbar{
+    margin-top: -120px;
+}
+
+.vl{ /*Linea divisoria della barra di footbar*/
+    border-radius: 30px;
+    border-left: 2px solid whitesmoke;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.infofoot{
+    top: 40px;
+    right: 17%;
+    position: absolute;
+    color: whitesmoke;
+}
+
+.tasti{ /*tasti presenti nella barra del footbar*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mapouter{ /*caratteristiche mappa google*/
+    top: 10px;
+    left: 1%;
+    position: absolute;
+    text-align:right;
+}
+
+.gmap_canvas {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    overflow:hidden;
+    background:none!important;
+}
+
+#gmap_canvas{
+    width:540px;
+    height:280px;
+}
